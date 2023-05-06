@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/00b7093b3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <p>Todo-List</p>
+            <i class="fa-solid fa-list-check"></i>
+        </div>
+        <i class="fa-solid fa-bars hamburger"></i>
+    </header>
+    <main>
+        <aside class="hideMenu">
+            <button class="home">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </button>
+            <button class="todayWeekTasks" data="today">
+                <i class="fa-solid fa-calendar-day"></i>
+                Today
+            </button>
+            <button class="todayWeekTasks" data="week">
+                <i class="fa-solid fa-calendar-week"></i>
+                This Week
+            </button>
+            <p>Projects</p>
+            <div class="projectLists"></div>
+            <div class="projects">
+                <div class="inputItems inputProject">
+                    <form class="inputProjects addProjectForm" action="" method="Post">
+                        <input type="text" name="projectName" id="project" placeholder="Project Name">
+                        <button><i class="fa-solid fa-check"></i></button>
+                    </form>
+                    <button class="cancelAdd cancelProject"><i class="fa-solid fa-x"></i></button>
+                </div>
+                <button class="addProject">
+                    <i class="fa-solid fa-plus"></i>
+                    Add Project
+                </button>
+            </div>
+        </aside>
+        <section>
+            <div class="tasks"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2023 basteOble</p>
+        <a href="https://github.com/basteOble" target="_blank">
+            <i class="fab fa-github" aria-hidden="true"></i></a>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>
